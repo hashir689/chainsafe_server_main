@@ -10,6 +10,7 @@ import { getDefaultProvider } from 'ethers'
 import { stream2buffer } from './stream2buffer'
 import { cidToTokenId } from './cidHelpers'
 import cors from 'cors'
+import { Console } from 'console'
 
 const app = express();
 
@@ -28,6 +29,9 @@ app.listen(port, () => {
 
 app.get("/voucher721", async (req, res) => {
   try {
+    console.log("Heelow world")
+    
+
     if (!signerMnemonic) {
       throw new Error("No signer key is configured")
     }
@@ -91,7 +95,7 @@ app.get("/voucher721", async (req, res) => {
   } catch (error: any) {
     console.error(error?.message)
     console.log("Error found"+ error)
-    
+
     res.status(503).send("Internal Server Error")
   }
 })
