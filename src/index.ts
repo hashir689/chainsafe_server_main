@@ -90,6 +90,8 @@ app.get("/voucher721", async (req, res) => {
     res.send(voucher)
   } catch (error: any) {
     console.error(error?.message)
+    console.log("Error found"+ error)
+    
     res.status(503).send("Internal Server Error")
   }
 })
