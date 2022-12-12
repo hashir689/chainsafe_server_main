@@ -29,7 +29,7 @@ app.listen(port, () => {
 
 app.get("/voucher721", async (req, res) => {
   try {
-    console.log("Heelow world")
+    console.error("Heelow world")
     
 
     if (!signerMnemonic) {
