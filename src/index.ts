@@ -63,8 +63,8 @@ app.get("/voucher721", async (req, res) => {
     const image = new File([imageBuffer.buffer], "image.jpg", { type: "image/jpg" })
 
     const metadata = {
-      name: `test lazy mint ERC721 nft`,
-      description: `ipsum lorem`,
+      name: `test lazy mint ERC721 Custome nft`,
+      description: `ipsum 721`,
       image,
     }
 
@@ -127,8 +127,8 @@ app.get("/voucher1155", async (req, res) => {
     const image = new File([imageBuffer.buffer], "image.jpg", { type: "image/jpg" })
 
     const metadata = {
-      name: `test lazy mint ERC1155 nft`,
-      description: `ipsum lorem`,
+      name: `test lazy mint ERC1155 Custom nft`,
+      description: `ipsum 1155`,
       image,
     }
 
